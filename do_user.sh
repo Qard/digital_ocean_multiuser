@@ -11,7 +11,7 @@ fi
 do_user() {
   # If there is no action, show help text
   if [ $# -lt 1 ]; then
-    douser help
+    do_user help
     return
   fi
 
