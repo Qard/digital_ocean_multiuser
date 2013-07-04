@@ -4,13 +4,13 @@ This is a little shell script helper to manage multiple Digital Ocean accounts f
 
 ## Installation
 
-To install you could use the [install script](https://github.com/qard/digital_ocean_multiuser/blob/master/install.sh) (requires Git) using cURL:
+To install you could use the [install script](https://github.com/Qard/digital_ocean_multiuser/blob/master/install.sh) (requires Git) using cURL:
 
-	curl https://raw.github.com/qard/digital_ocean_multiuser/master/install.sh | sh
+	curl https://raw.github.com/Qard/digital_ocean_multiuser/master/install.sh | sh
 
 or Wget:
 
-	wget -qO- https://raw.github.com/qard/digital_ocean_multiuser/master/install.sh | sh
+	wget -qO- https://raw.github.com/Qard/digital_ocean_multiuser/master/install.sh | sh
 
 <sub>The script clones the repository to `~/.digital_ocean` and adds the source line to your profile (`~/.bash_profile` or `~/.profile`).</sub>
 

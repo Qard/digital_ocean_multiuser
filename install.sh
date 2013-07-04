@@ -8,7 +8,7 @@ if [ -d "$DO_USER_DIR" ]; then
 fi
 
 # Cloning to $DO_USER_DIR
-git clone https://github.com/qard/digital_ocean_multiuser.git $DO_USER_DIR
+git clone https://github.com/Qard/digital_ocean_multiuser.git $DO_USER_DIR
 
 echo
 
