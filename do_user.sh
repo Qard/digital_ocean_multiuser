@@ -6,7 +6,7 @@ if [ ! -d "$DO_USER_DIR" ]; then
 fi
 
 # Ensure existence of accounts folder
-[ -d ./accounts ] || mkdir ./accounts
+[ ! -d ./accounts ] && mkdir ./accounts
 
 do_user() {
   # If there is no action, show help text
@@ -33,7 +33,7 @@ do_user() {
       read -p "API Key: " key
 
       # Generate account file
-      rm ./accounts/$name
+      [ -f ./accounts/$name ] && rm ./accounts/$name
       echo "export DIGITAL_OCEAN_CLIENT_ID=$id" >> ./accounts/$name
       echo "export DIGITAL_OCEAN_API_KEY=$key" >> ./accounts/$name
       
