@@ -4,6 +4,7 @@ if [ -d "$DO_USER_DIR" ]; then
   echo "=> do_user is already installed in $DO_USER_DIR, trying to update"
   echo -ne "\r=> "
   cd $DO_USER_DIR && git pull
+  . ./do_user.sh
   exit
 fi
 
